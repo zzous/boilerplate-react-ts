@@ -1,4 +1,4 @@
-// const { getLoader, loaderByName } = require('@craco/craco');
+const { getLoader, loaderByName } = require('@craco/craco');
 const CracoAlias = require('craco-alias');
 
 module.exports = {
@@ -12,8 +12,8 @@ module.exports = {
     {
       plugin: CracoAlias,
       options: {
-        source: 'jsconfig',
-        baseUrl: '.'
+        source: 'tsconfig',
+        tsConfigPath: 'tsconfig.paths.json'
       }
     },
     {
@@ -21,7 +21,7 @@ module.exports = {
     }
   ],
   webpack: {
-    configure: (webpackConfig, { env }) => {
+    configure: (webpackConfig, { env, paths }) => {
       if (env === 'development') {
         // const overrideOptions = {
         //   // ... options

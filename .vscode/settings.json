@@ -1,14 +1,14 @@
 {
   "liveServer.settings.port": 5501,
   "path-intellisense.mappings": {
-      "@": "${workspaceFolder}/src"
+    "@": "${workspaceFolder}/src"
   },
   // & ESLint
   "eslint.alwaysShowStatus": true,
   "eslint.workingDirectories": [
-      {
-          "mode": "auto"
-      }
+    {
+        "mode": "auto"
+    }
   ],
   "eslint.validate": [
     "javascript",

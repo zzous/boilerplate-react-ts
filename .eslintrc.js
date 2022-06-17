@@ -112,7 +112,7 @@ module.exports = {
     }],
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx', '.ts', '.tsx'] }],
     'react/no-unescaped-entities': 'off',
     'react/display-name': 'off',
     'react/prop-types': 'off',
